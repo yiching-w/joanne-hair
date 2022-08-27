@@ -142,7 +142,7 @@ p {
   padding: 0 35px;
   font-size: 16px;
   line-height: 48px;
-  color: #fff;
+  color: #ffe1ca;
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -347,8 +347,8 @@ p {
     2.HEADER css 
 ===========================*/
 .header-area {
-  padding: 30px 0;
-  background-color: #fff;
+  padding: 15px 0;
+  background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
@@ -361,7 +361,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #000D;
   -webkit-box-shadow: 0px 0px 40px 0px rgba(156, 156, 156, 0.25);
   -moz-box-shadow: 0px 0px 40px 0px rgba(156, 156, 156, 0.25);
   box-shadow: 0px 0px 40px 0px rgba(156, 156, 156, 0.25);
@@ -379,14 +379,14 @@ p {
 }
 
 .header-area .navbar .navbar-brand {
-  color: #333;
+  color: #ffe1ca;
 }
 
 .header-area .navbar .navbar-toggler .bar-icon {
   width: 30px;
   height: 2px;
   margin: 5px 0;
-  background-color: #333;
+  background-color: #ffe1ca;
   display: block;
   position: relative;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -395,6 +395,7 @@ p {
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
+
 
 .header-area .navbar .navbar-toggler.active .bar-icon:nth-child(1) {
   top: 7px;
@@ -461,12 +462,19 @@ p {
 .header-area .navbar .navbar-nav .nav-item a {
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #ffe1ca;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+}
+
+
+@media (max-width: 991px) {
+  .header-area .navbar .navbar-nav .nav-item a {
+    color: #000;
+  }
 }
 
 .header-area .navbar .navbar-nav .nav-item.active a,
@@ -925,6 +933,7 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+  cursor: pointer;
 }
 
 .collection-menu .nav a.active {
@@ -1305,14 +1314,25 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
+  position: relative;
 }
 
-.single-temp .team-image img {
-  border-radius: 50%;
+.single-temp::before {
+  background-image: url(../images/salon.png);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: 100px;
+  opacity: 0.55;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .single-temp .team-content .title a {
-  font-size: 20px;
+  font-size: 25px;
   color: #333;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
@@ -1363,10 +1383,10 @@ p {
 }
 
 .single-temp:hover {
-  border-color: #000;
-  -webkit-box-shadow: 0px 0px 7px 0px rgba(254, 119, 101, 0.55);
-  -moz-box-shadow: 0px 0px 7px 0px rgba(254, 119, 101, 0.55);
-  box-shadow: 0px 0px 7px 0px rgba(254, 119, 101, 0.55);
+  border-color: #333;
+  -webkit-box-shadow: 0px 0px 7px 0px #3335;
+  -moz-box-shadow: 0px 0px 7px 0px #3335;
+  box-shadow: 0px 0px 7px 0px #3335;
 }
 
 /*===========================
@@ -2274,3 +2294,14 @@ p.form-message.error {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#contact {
+  background: #fffaf6;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
