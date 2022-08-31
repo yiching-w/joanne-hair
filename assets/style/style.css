@@ -894,7 +894,7 @@ p {
 ===========================*/
 @media (max-width: 767px) {
   .product-area {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 }
@@ -1321,7 +1321,7 @@ p {
   background-image: url(../images/salon.png);
   background-repeat: no-repeat;
   background-position: 3%;
-  background-size: 100px;
+  background-size: 70px;
   opacity: 0.55;
   content: '';
   position: absolute;
@@ -1383,7 +1383,6 @@ p {
 }
 
 .single-temp:hover {
-  border-color: #333;
   -webkit-box-shadow: 0px 0px 7px 0px #3335;
   -moz-box-shadow: 0px 0px 7px 0px #3335;
   box-shadow: 0px 0px 7px 0px #3335;
@@ -1761,11 +1760,11 @@ p.form-message.error {
 }
 
 .footer-logo .footer-social li a {
-  font-size: 16px;
-  color: #777;
-  width: 35px;
-  height: 35px;
-  line-height: 38px;
+  font-size: 25px;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.2);
@@ -2304,4 +2303,9 @@ p.form-message.error {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.blog-content .title {
+  background-color: #ffe1ca;
+  padding: 15px 30px;
 }
