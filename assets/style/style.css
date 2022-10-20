@@ -2244,7 +2244,8 @@ p.form-message.error {
 }
 
 .slider {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
