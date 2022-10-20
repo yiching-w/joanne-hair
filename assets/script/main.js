@@ -295,7 +295,13 @@ $(function () {
     }
 
   });
-
+  $('.slider').slick({
+    autoplay: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true
+  });
 
 
 });

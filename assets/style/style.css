@@ -721,15 +721,7 @@ p {
   margin: 0 5px;
 }
 
-.slider-social .social li a {
-  font-size: 20px;
-  color: #555;
-  border: 1px solid #ddd;
-  background: #fffa;
-  width: 35px;
-  line-height: 35px;
-  height: 35px;
-  text-align: center;
+.slider-social .social li a img {
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -737,9 +729,8 @@ p {
   transition: all 0.4s ease-out 0s;
 }
 
-.slider-social .social li a:hover {
-  color: #000;
-  border-color: #000;
+.slider-social .social li a:hover img {
+  transform: scale(1.1);
 }
 
 /*===========================
@@ -1704,28 +1695,16 @@ p.form-message.error {
   margin-left: 0;
 }
 
-.footer-logo .footer-social li a {
-  font-size: 25px;
-  color: #333;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.2);
-  -moz-box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.2);
-  box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.2);
+.footer-logo .footer-social li a img {
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  border-radius: 50%;
 }
 
-.footer-logo .footer-social li a:hover {
-  background-color: #000;
-  color: #fff;
+.footer-logo .footer-social li a:hover img {
+  transform: scale(1.1);
 }
 
 .f-title {
@@ -2253,4 +2232,23 @@ p.form-message.error {
 .blog-content .title {
   background-color: #ffe1ca;
   padding: 15px 30px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #000;
+}
+
+.intro {
+  width: 45%;
+}
+
+.slider {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+  }
 }
